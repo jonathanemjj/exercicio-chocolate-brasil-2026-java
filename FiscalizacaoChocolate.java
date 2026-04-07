@@ -9,11 +9,11 @@ public class FiscalizacaoChocolate {
         System.out.println(" Digite o percentual de cacau da amostra: ");
         double percentual = sc.nextDouble();
 
-        if (percentual < 25) {
+        if (percentual < 25) { // se o percentual for menor que 25, exibe a mensagem abaixo
             System.out.println("ALERTA: Produto 'Fake'. Classificar como 'Sabor Chocolate'");
-        } else if (percentual >= 25 && percentual < 35){
+        } else if (percentual >= 25 && percentual < 35){ // se o percentual for maior ou igual a 25 e também menor que 35 exibe a mensagem abaixo
             System.out.println("Chocolate Comum (Padrão Nacional Atual)");
-        }else {
+        }else { // casa nao seja nada igual as opções acima exibe a mensagem abaixo
             System.out.println("Chocolate de Alta Qualidade (Padrão Internacional/UE)");
         } 
 
